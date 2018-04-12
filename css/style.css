@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+body{
+  background-size: 100% 100vh;
+  background-image: url(../media/sistema4.jpg);
+}
+
+#title{
+  font-size: 70px;
+  margin:90px auto 0 auto;
+  text-align:center;
+  color:white;
+  text-shadow:5px 5px black;
+}
+
+#choice-container{
+  width:950px;
+  height:100px;
+  margin:50px auto;
+}
+
+.choice{
+  float:left;
+  width:200px;
+  height:200px;
+  border:2px solid white;
+  margin:100px 50px;
+  transition:0.5s;
+  text-align:center;
+  color:white;
+  font-size: 20px;
+  line-height:40px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.choice-text{
+  text-shadow:3px 3px black;
+  color:white;
+  margin-top:50px;
+  transition:0.5s;
+}
+
+.choice:hover > .choice-text{
+  margin-top:55px;
+  font-size: 22px;
+}
+
+.one-line{
+  margin-top:75px;
+}
+
+.choice:hover > .one-line{
+  margin-top:80px;
+  font-size: 22px;
+}
+
+.choice:hover{
+  width:210px;
+  height:210px;
+  margin:95px 45px;
+}
+
+#footer{
+  text-align:center;
+  color:white;
+  clear:both;
+}

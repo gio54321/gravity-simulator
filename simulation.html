@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>simulation</title>
+
+    <link rel="stylesheet" type="text/css" href="css/simulation.css" />
+
+    <script language="javascript" type="text/javascript" src="js/libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="js/planet.js"></script>
+    <script language="javascript" type="text/javascript" src="js/settings.js"></script>
+    <script language="javascript" type="text/javascript" src="js/simulation.js"></script>
+  </head>
+  <body>
+    <div id="title">
+      <!--h1>La simulazione</h1-->
+    </div>
+    <div id="my-canvas-div"></div>
+
+    <a href="index.html">
+      <div id="back">
+        <span id="back-button">&#60;</span>
+        <span id="back-text">torna alla home</span>
+      </div>
+    </a>
+
+    <div id="settings">
+      <span class="subtitle">Impostazioni</span><br /><br />
+
+      cambia gli oggetti <input type="checkbox" id="change-objects" checked="true"/>
+      <br />
+      numero particelle <input type="number" id="particle-count" min="0" max="10" value="2">
+      <br />
+      numero pianeti <input type="number" id="planet-count" min="0" max="10" value="1">
+      <br /><br />
+      attrito particelle <input type="number" id="friction-ratio" min="0" max="0.1" value="0" step="0.001">
+      <br />
+      mostra framerate<input type="checkbox" id="show-framerate" />
+      imposta framerate <input type="number" id="set-framerate" min="5" max="80" value="60" step="5">
+      <br />
+      <input type="button" value="Applica" onclick="applySettings()" />
+      <br /><br />
+      carica situazioni predefinite<br />
+      <select id="presets">
+        <option value="1">gravitazione ellittica su un pianeta</option>
+        <option value="2">due pianeti e una particella</option>
+      </select>
+      <input type="button" value="Carica" onclick="loadPreset()" />
+    </div>
+  </body>
+</html>
