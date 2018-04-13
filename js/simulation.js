@@ -1,7 +1,7 @@
 var planets = [],
   particle = [],
   planetCount = 1,
-  particleCount = 2,
+  particleCount = 1,
   dots = [],
   first = true
   particleInteraction = true,
